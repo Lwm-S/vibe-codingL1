@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@import "highlight.js/styles/github-dark-dimmed.min.css";
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: #0f0f17;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Prose overrides */
+.prose {
+  --tw-prose-body: rgba(255, 255, 255, 0.85);
+  --tw-prose-headings: rgba(255, 255, 255, 0.95);
+  --tw-prose-links: #60a5fa;
+  --tw-prose-bold: rgba(255, 255, 255, 0.95);
+  --tw-prose-code: rgba(255, 255, 255, 0.85);
+  --tw-prose-quotes: rgba(255, 255, 255, 0.4);
+  --tw-prose-quote-borders: rgba(255, 255, 255, 0.1);
+}
+
+.prose pre {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.prose p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose p:first-child {
+  margin-top: 0;
+}
+
+.prose ul, .prose ol {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.prose table {
+  font-size: 13px;
+}
+
+.prose th, .prose td {
+  padding: 0.5em 0.75em;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.prose blockquote {
+  border-left-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  font-style: normal;
+}
+
+/* Selection */
+::selection {
+  background: rgba(96, 165, 250, 0.3);
+}
